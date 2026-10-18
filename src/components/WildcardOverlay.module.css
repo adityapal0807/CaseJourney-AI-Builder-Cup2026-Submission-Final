@@ -1,0 +1,139 @@
+.flashFrame {
+  position: fixed;
+  inset: 0;
+  background: rgba(184, 122, 0, 0.15);
+  z-index: 998;
+  pointer-events: none;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.card {
+  background: var(--bg-surface);
+  border: 1px solid rgba(184, 122, 0, 0.25);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 580px;
+  margin: 0 16px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+  overflow: hidden;
+  position: relative;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 20px 16px;
+}
+
+.iconWrap {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.tag {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--accent-amber);
+  letter-spacing: 0.02em;
+}
+
+.tagSub {
+  font-size: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--text-tertiary);
+  letter-spacing: 0.06em;
+  margin-top: 2px;
+}
+
+.timerWrap {
+  margin-left: auto;
+  text-align: right;
+}
+
+.timer {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--accent-amber);
+  letter-spacing: 0.02em;
+  transition: color 0.3s ease;
+}
+
+.timerRed {
+  color: var(--accent-red) !important;
+  animation: pulse-timer 0.5s ease infinite alternate;
+}
+
+@keyframes pulse-timer {
+  from { opacity: 1; }
+  to   { opacity: 0.6; }
+}
+
+.timerLabel {
+  font-size: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--text-tertiary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.message {
+  font-size: 15px;
+  line-height: 1.65;
+  color: var(--text-primary);
+  padding: 0 20px 20px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-top: 1px solid var(--bg-border);
+  gap: 16px;
+}
+
+.hint {
+  font-size: 12px;
+  color: var(--text-secondary);
+  flex: 1;
+}
+
+.dismissBtn {
+  background: var(--accent-amber-light);
+  border: none;
+  border-radius: 8px;
+  color: var(--accent-amber);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.dismissBtn:hover {
+  background: #fce8c4;
+}
+
+.timerBarTrack {
+  height: 3px;
+  background: var(--bg-elevated);
+}
+
+.timerBarFill {
+  height: 100%;
+  background: var(--accent-amber);
+}

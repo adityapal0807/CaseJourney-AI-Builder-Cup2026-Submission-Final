@@ -1,0 +1,10 @@
+export function getSessions(): any[];
+export function saveSession(session: any): void;
+export function getElo(): number;
+export function setElo(elo: number): void;
+export function getStreak(): number;
+export function incrementStreak(): number;
+export function getAchievements(): string[];
+export function unlockAchievement(id: string): boolean;
+export function getLastFiveAverageScores(): Record<string, number>;
+export function getStats(): any;

@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.svg {
+  background: var(--bg-base);
+  border-radius: 10px;
+  border: 1px solid var(--bg-border);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+.legendItem::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--dot);
+  flex-shrink: 0;
+}
+
+.expandBtn {
+  align-self: flex-start;
+  background: none;
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius-btn);
+  color: var(--text-secondary);
+  font-size: 12px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.expandBtn:hover {
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
+}

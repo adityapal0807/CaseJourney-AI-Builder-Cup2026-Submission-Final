@@ -1,0 +1,58 @@
+.container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: all;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--bg-surface);
+  border: 1px solid var(--bg-border);
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+  min-width: 280px;
+  cursor: pointer;
+  border-left: 3px solid var(--toast-color);
+}
+
+.icon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.label {
+  font-size: 10px;
+  font-weight: 600;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--toast-color);
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 2px;
+}
+
+.close {
+  margin-left: auto;
+  background: none;
+  color: var(--text-tertiary);
+  font-size: 18px;
+  line-height: 1;
+  padding: 0 4px;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+.close:hover { color: var(--text-primary); }

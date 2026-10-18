@@ -1,0 +1,136 @@
+.panel {
+  background: var(--bg-surface);
+  border: 1px solid var(--bg-border);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-card);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--bg-border);
+  background: var(--bg-elevated);
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.type {
+  font-size: 10px;
+  font-weight: 500;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.06em;
+  color: var(--text-tertiary);
+  background: var(--bg-base);
+  border-radius: 5px;
+  padding: 2px 8px;
+}
+
+.body {
+  padding: 16px;
+}
+
+/* Table */
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table th {
+  text-align: left;
+  padding: 8px 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+  font-family: 'IBM Plex Mono', monospace;
+  border-bottom: 1px solid var(--bg-border);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.table td {
+  padding: 8px 12px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--bg-border);
+}
+
+.table tr:nth-child(even) td {
+  background: var(--bg-elevated);
+}
+
+.highlightRow td {
+  background: var(--accent-amber-light) !important;
+  color: var(--accent-amber) !important;
+  font-weight: 600;
+}
+
+/* Insight Card */
+.insightCard {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: var(--accent-amber-light);
+  border: 1px solid rgba(184,122,0,0.15);
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.insightIcon {
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.insightText {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.insightSub {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+/* Funnel */
+.funnel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+.funnelLayer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  border-radius: 6px;
+  transition: var(--transition-fast);
+  min-height: 40px;
+}
+
+.funnelLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+}
+
+.funnelValue {
+  font-size: 12px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: rgba(255,255,255,0.8);
+}
