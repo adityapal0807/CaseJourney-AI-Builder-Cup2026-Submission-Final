@@ -1,6 +1,6 @@
 # CaseJourney — GlobalAI Hackathon Submission (POC Edition)
 
-> **CaseJourney** is an AI-powered case interview simulator that mirrors top-tier management consulting interviews (McKinsey, BCG, Bain) with real-time bidirectional voice interaction, dynamic progressive exhibits, automated multidimensional scoring, and post-session **MindFlow** reasoning tree analysis.
+> **CaseJourney** is an AI-powered case interview simulator that mirrors top-tier management consulting interviews  with real-time bidirectional voice interaction, dynamic progressive exhibits, automated multidimensional scoring, and post-session **MindFlow** reasoning tree analysis.
 
 This repository is a self-contained, turnkey Proof-of-Concept (POC) built specifically for the **GlobalAI Hackathon**.
 
